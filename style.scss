@@ -1,0 +1,736 @@
+/*
+Theme Name: Mood
+Theme URI: 
+Description:  A child theme for the LSX theme
+Author:     Warwick
+Author URI:   https://thesaucymare.co.za/
+Template:   lsx
+Version:    1.0
+License:    GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  sumika
+*/
+
+/*--------------------------------------------------------------
+0 Helper Selectors
+--------------------------------------------------------------*/
+.tcenter {text-align:center;}
+.tright {text-align:right;}
+.tleft {text-align:left;}
+
+/*--------------------------------------------------------------
+1 General
+--------------------------------------------------------------*/
+body {
+	color:#444444 !important;
+}
+a {
+	color: #ddb1a2;
+}
+a:hover {
+	color: #e5595e;
+}
+
+body.lsx .btn {
+	text-transform: uppercase;
+}
+
+
+/*--------------------------------------------------------------
+2.0 Header - General
+--------------------------------------------------------------*/
+body .page-banner {	
+	height: 100vh;
+}
+body .page-banner {
+	padding:300px 0px;
+}
+/*--------------------------------------------------------------
+2.1 Header - Site Branding
+--------------------------------------------------------------*/
+
+body header.banner .site-description, header.banner .site-title a {
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#ffffff;
+    
+}
+body header.banner .site-title {
+	margin: 45px 0px !important;
+}
+header.banner.scrolled .site-title {
+	margin: 26px 0 !important;
+}
+/*body header.banner.navbar-static-top .nav-bar-wrapper .site-branding {
+	display:none;
+}
+body header.banner.navbar-static-top.scrolled .nav-bar-wrapper .site-branding {
+	display:block;
+}
+body header.banner.navbar-static-top.scrolled .navbar-header {
+	opacity: 0;
+	transition: opacity 1s, height 0 1s;
+	height: 0;	
+	visibility: collapse;
+}*/
+
+body header.banner .banner.nav-bar .site-branding {
+	float:left;
+	margin: 26px 0px 0px;
+    padding: 0;	
+}
+body header.banner .site-description {
+	display:none;
+}
+@media screen and (min-width: 1200px){
+	body header.banner > .container .nav-bar-wrapper .site-branding {
+    	padding-left: 40px;
+	}
+}
+body header.banner .banner.nav-bar .site-title a {
+	color:#ffffff;
+}
+
+/*--------------------------------------------------------------
+2.1 Header - Navbar
+--------------------------------------------------------------*/
+body header.banner {
+	background: #efd1b9 !important; /* Old browsers */
+	background: -moz-linear-gradient(left,  #efd1b9 0%, #c7a4a3 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#efd1b9), color-stop(100%,#c7a4a3)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #efd1b9 0%,#c7a4a3 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #efd1b9 0%,#c7a4a3 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #efd1b9 0%,#c7a4a3 100%) !important; /* IE10+ */
+	background: linear-gradient(to right,  #efd1b9 0%,#c7a4a3 100%) !important; /* W3C */
+	display: block !important;
+	width: 100% !important;
+}
+body .navbar-header {
+    width: 100%;
+    display: inline-block;
+    float: none;
+    background-color: transparent;
+    opacity: 1;
+	transition: opacity 1s, height 0;
+}
+ 
+
+
+.page-banner header.page-header h1.page-title {display:none;}
+
+body.page-has-banner.top-menu-fixed .page-banner, body.single-jetpack-portfolio.top-menu-fixed .page-banner {
+    position: inherit !important;
+    padding: 300px 0px;
+    height: 0px;
+}
+
+body.page-has-banner.top-menu-fixed .wrap, body.single-jetpack-portfolio.top-menu-fixed .wrap {
+    margin-top: 0 !important;
+}
+
+/* Nav Bar */
+
+
+body header.banner nav .nav.navbar-nav li a {
+	color: #fff !important;
+	font-size:1.8rem;
+	text-transform: uppercase;
+	font-weight: 400 !important;
+	padding: 15px 11px;
+}
+
+body nav.primary-navbar .nav.navbar-nav li.active > a {
+    color: #fff !important;
+    background: transparent !important;
+    font-weight: 600 !important;
+}
+
+body  header.banner nav .nav.navbar-nav li:hover > a {
+    color: #404040 !important;
+    background: transparent !important;
+}
+
+body .mobile-menu-title {
+    margin: 52px 13px 44px !important;
+    color:#404040 !important;
+}
+body .scrolled .mobile-menu-title {
+    margin: 30px 10px !important;
+}
+.navbar-toggle {
+    margin: 44px 0px 43px !important;
+    background: #404040 !important;
+}
+.scrolled .navbar-toggle {
+    margin: 32px 0 !important;
+}
+
+@media screen and (min-width: 992px) {
+	body.page.top-menu-fixed .wrap {
+		margin-top: 40px !important;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	
+	body .navbar-header {
+		width: 30%;
+	}	
+		
+	header.banner > .container {
+		width: 100% !important;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+    }	
+    
+    header.banner > .container .navbar-header {
+    	padding-left: 40px;
+    }
+    
+    header.banner > .container nav.primary-navbar {
+    	padding-right: 40px;
+    }
+    .navbar-toggle {
+    	margin: 53px 0px 43px !important;
+    }
+	body .mobile-menu-title {
+   		margin: 45px 13px 44px !important;
+	}    
+}
+
+
+/*--------------------------------------------------------------
+3.0 Front Page - General
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+3.1 Front Page - Get In Touch
+--------------------------------------------------------------*/
+
+.section-title, #get-in-touch .widget-title {
+	color: #78615a;
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 0.6667em;
+	text-transform: uppercase;
+}
+
+#home-widgets #get-in-touch {
+    margin-bottom: 2em;
+}
+
+#home-widgets #get-in-touch h3{
+    display: inline-block;
+    width: 50%;
+    margin:0px;
+}
+#home-widgets #get-in-touch ul{
+    display: inline-block;
+    width: 50%;
+    text-align:right;
+    margin: 0 !important;
+    position: absolute;
+}
+#home-widgets #get-in-touch ul li{
+	list-style-type: none;
+    display: inline;
+    margin-right: 10px;	
+}
+#home-widgets #get-in-touch ul li span.genericon {
+	font-size:34px;
+	color: #ddb1a2;
+}
+#home-widgets #get-in-touch ul li span.genericon:hover:before {
+	 color: #e5595e;
+	 
+}
+
+/*--------------------------------------------------------------
+3.2 Front Page - Testaments
+--------------------------------------------------------------*/
+
+#treatments .masonry article {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+ }
+ 
+/*--------------------------------------------------------------
+3.2 Front Page - Testimonials
+--------------------------------------------------------------*/ 
+
+.widget_testimonials { margin-bottom:15px; }
+ 
+.widget_testimonials .carousel {min-height: 180px;}
+
+ .widget_testimonials .item {
+ 	text-align:center;
+ 	padding:1% 16% 0%;
+ }
+.widget_testimonials .carousel-control { 
+ background-image: none !important;
+ }
+.widget_testimonials .carousel-control .genericon {
+    margin-top: 30%;
+    color: black;
+    font-size: 30px;
+ }
+ 
+ .portfolio-content-wrapper a.portfolio-title { display:none !important; }
+ .portfolio-content-wrapper:hover a.portfolio-title{display:block !important;}
+
+
+/* Single Pages and Portfolios */
+.single .lsx-breaker {
+	margin: 80px -9999rem 80px;
+}
+.single footer.entry-meta { display:none; }
+.single article { margin-bottom: 0; }
+
+
+/*--------------------------------------------------------------
+ Footer Widgets
+--------------------------------------------------------------*/
+body.lsx #footer-widgets , body.lsx footer.content-info {
+	background: rgba(239,209,185,0.5) !important; /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(239,209,185,0.5) 0%, rgba(199,164,163,0.5) 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(239,209,185,0.5)), color-stop(100%,rgba(199,164,163,0.5))) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(239,209,185,0.5) 0%,rgba(199,164,163,0.5) 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(239,209,185,0.5) 0%,rgba(199,164,163,0.5) 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(239,209,185,0.5) 0%,rgba(199,164,163,0.5) 100%) !important; /* IE10+ */
+	background: linear-gradient(to right,  rgba(239,209,185,0.5) 0%,rgba(199,164,163,0.5) 100%) !important; /* W3C */		
+}
+#footer-widgets .widget {
+	color:#444444 !important;	
+	margin: 70px 0 40px !important;
+}
+#footer-widgets .widget h3.widget-title {
+	color: #333333 !important;
+}
+body.lsx #footer-widgets .widget a.btn, body.lsx #footer-widgets .widget a:hover {
+    color: #ffffff !important;
+}
+body.lsx #footer-widgets .widget a {
+	color:#444444 !important;
+}
+
+#footer-widgets .widget ul, #footer-widgets .widget ol {
+    list-style: none;
+    margin: 0;
+    padding:0 !important;
+}
+#footer-widgets .widget ul > li, #footer-widgets .widget ol > li {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+#footer-widgets .widget ul > li, #footer-widgets .widget ol > li {
+    padding: 0.5em 0;
+}
+footer.content-info .credit {
+    color: #333333 !important;
+    text-transform: capitalize;
+}
+
+/*--------------------------------------------------------------
+10.2 Front Page
+--------------------------------------------------------------*/
+
+/* Portfolio */
+.project-summary {
+	background: rgba(229, 89, 92, 0.9);
+	text-align: center;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.project-image:hover .project-summary {
+	opacity: 1;
+}
+.project-summary {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+.project-title {
+	color: #fff;
+	font-size: 30px;
+	font-size: 3rem;
+	font-weight: 300;
+	position: relative;
+	top: 50%;
+	left: 0;
+	text-transform: none;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+
+}
+/* Social Links Menu */
+.front-page-block.social h2 {
+	display: inline;
+	float: left;
+	line-height: 1;
+	margin: 0;
+	width: auto;
+}
+.front-page-block.social .social-links {
+	display: inline;
+	float: right;
+}/*
+Theme Name: Sumika
+Theme URI: 
+Description:  A child theme for the LSX theme
+Author:     Warwick
+Author URI:   https://thesaucymare.co.za/
+Template:   lsx
+Version:    1.0
+License:    GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  sumika
+*/
+
+/*--------------------------------------------------------------
+0 Helper Selectors
+--------------------------------------------------------------*/
+.tcenter {text-align:center;}
+.tright {text-align:right;}
+.tleft {text-align:left;}
+
+/*--------------------------------------------------------------
+1 General
+--------------------------------------------------------------*/
+a {
+	color: #ddb1a2;
+}
+a:hover {
+	color: #e5595e;
+}
+
+/*--------------------------------------------------------------
+2.0 Header - General
+--------------------------------------------------------------*/
+body .page-banner {	
+	height: 100vh;
+}
+body .page-banner {
+	padding:300px 0px;
+}
+/*--------------------------------------------------------------
+2.1 Header - Site Branding
+--------------------------------------------------------------*/
+
+body header.banner .site-description, header.banner .site-title a {
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#ffffff;
+    
+}
+body header.banner .site-title {
+	margin: 45px 0px !important;
+}
+header.banner.scrolled .site-title {
+	margin: 26px 0 !important;
+}
+/*body header.banner.navbar-static-top .nav-bar-wrapper .site-branding {
+	display:none;
+}
+body header.banner.navbar-static-top.scrolled .nav-bar-wrapper .site-branding {
+	display:block;
+}
+body header.banner.navbar-static-top.scrolled .navbar-header {
+	opacity: 0;
+	transition: opacity 1s, height 0 1s;
+	height: 0;	
+	visibility: collapse;
+}*/
+
+body header.banner .banner.nav-bar .site-branding {
+	float:left;
+	margin: 26px 0px 0px;
+    padding: 0;	
+}
+body header.banner .site-description {
+	display:none;
+}
+@media screen and (min-width: 1200px){
+	body header.banner > .container .nav-bar-wrapper .site-branding {
+    	padding-left: 40px;
+	}
+}
+body header.banner .banner.nav-bar .site-title a {
+	color:#ffffff;
+}
+
+/*--------------------------------------------------------------
+2.1 Header - Navbar
+--------------------------------------------------------------*/
+body header.banner {
+	background: #efd1b9 !important; /* Old browsers */
+	background: -moz-linear-gradient(left,  #efd1b9 0%, #c7a4a3 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#efd1b9), color-stop(100%,#c7a4a3)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #efd1b9 0%,#c7a4a3 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #efd1b9 0%,#c7a4a3 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #efd1b9 0%,#c7a4a3 100%) !important; /* IE10+ */
+	background: linear-gradient(to right,  #efd1b9 0%,#c7a4a3 100%) !important; /* W3C */
+	display: block !important;
+	width: 100% !important;
+}
+body .navbar-header {
+    width: 30%;
+    display: inline-block;
+    float: none;
+    background-color: transparent;
+    opacity: 1;
+	transition: opacity 1s, height 0;
+} 
+
+.page-banner header.page-header h1.page-title {display:none;}
+
+body.page-has-banner.top-menu-fixed .page-banner, body.single-jetpack-portfolio.top-menu-fixed .page-banner {
+    position: inherit !important;
+    padding: 300px 0px;
+    height: 0px;
+}
+
+body.page-has-banner.top-menu-fixed .wrap, body.single-jetpack-portfolio.top-menu-fixed .wrap {
+    margin-top: 0 !important;
+}
+
+/* Nav Bar */
+@media screen and (min-width: 992px) {
+	body.page.top-menu-fixed .wrap {
+		margin-top: 40px !important;
+	}
+}
+
+body header.banner nav .nav.navbar-nav li a {
+	color: #fff !important;
+	font-size:1.8rem;
+	text-transform: uppercase;
+	font-weight: 400 !important;
+	padding: 15px 11px;
+}
+
+body nav.primary-navbar .nav.navbar-nav li.active > a {
+    color: #fff !important;
+    background: transparent !important;
+    font-weight: 600 !important;
+}
+
+body  header.banner nav .nav.navbar-nav li:hover > a {
+    color: #404040 !important;
+    background: transparent !important;
+}
+
+@media screen and (min-width: 1200px) {
+	
+	header.banner > .container {
+		width: 100% !important;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+    }	
+    
+    header.banner > .container .navbar-header {
+    	padding-left: 40px;
+    }
+    
+    header.banner > .container nav.primary-navbar {
+    	padding-right: 40px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+3.0 Front Page - General
+--------------------------------------------------------------*/
+.section-title, #get-in-touch .widget-title {
+	color: #78615a;
+	font-size: 42px;
+	font-size: 4.2rem;
+	font-weight: 700;
+	margin-bottom: 0.6667em;
+	text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+3.1 Front Page - Get In Touch
+--------------------------------------------------------------*/
+#home-widgets #get-in-touch {
+    margin-bottom: 2em;
+}
+
+#home-widgets #get-in-touch h3{
+    display: inline-block;
+    width: 50%;
+    margin:0px;
+}
+#home-widgets #get-in-touch ul{
+    display: inline-block;
+    width: 50%;
+    text-align:right;
+    margin: 0.6em 0 0 0 !important;
+    position: absolute;
+}
+#home-widgets #get-in-touch ul li{
+	list-style-type: none;
+    display: inline;
+    margin-right: 10px;	
+}
+#home-widgets #get-in-touch ul li span.genericon {
+	font-size:34px;
+	color: #ddb1a2;
+}
+#home-widgets #get-in-touch ul li span.genericon:hover:before {
+	 color: #e5595e;
+	 
+}
+
+/*--------------------------------------------------------------
+3.2 Front Page - Testaments
+--------------------------------------------------------------*/
+
+#treatments .masonry article {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+ }
+ 
+/*--------------------------------------------------------------
+3.2 Front Page - Testimonials
+--------------------------------------------------------------*/ 
+
+.widget_testimonials { margin-bottom:15px; }
+ 
+.widget_testimonials .carousel {min-height: 180px;}
+
+ .widget_testimonials .item {
+ 	text-align:center;
+ 	padding:1% 16% 0%;
+ }
+.widget_testimonials .carousel-control { 
+ background-image: none !important;
+ }
+.widget_testimonials .carousel-control .genericon {
+    margin-top: 30%;
+    color: black;
+    font-size: 30px;
+ }
+ 
+ .portfolio-content-wrapper a.portfolio-title { display:none !important; }
+ .portfolio-content-wrapper:hover a.portfolio-title{display:block !important;}
+
+
+/* Single Pages and Portfolios */
+.single .lsx-breaker {
+	margin: 80px -9999rem 80px;
+}
+.single footer.entry-meta { display:none; }
+.single article { margin-bottom: 0; }
+
+
+/*--------------------------------------------------------------
+ Footer Widgets
+--------------------------------------------------------------*/
+body.lsx #footer-widgets , body.lsx footer.content-info {
+	background: rgba(239,209,185,0.5) !important; /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(239,209,185,0.5) 0%, rgba(199,164,163,0.5) 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(239,209,185,0.5)), color-stop(100%,rgba(199,164,163,0.5))) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(239,209,185,0.5) 0%,rgba(199,164,163,0.5) 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(239,209,185,0.5) 0%,rgba(199,164,163,0.5) 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(239,209,185,0.5) 0%,rgba(199,164,163,0.5) 100%) !important; /* IE10+ */
+	background: linear-gradient(to right,  rgba(239,209,185,0.5) 0%,rgba(199,164,163,0.5) 100%) !important; /* W3C */		
+}
+#footer-widgets .widget {
+	color:#444444 !important;	
+	margin: 70px 0 40px !important;
+}
+#footer-widgets .widget h3.widget-title {
+	color: #333333 !important;
+}
+#footer-widgets .widget .btn {
+    color: #ffffff !important;
+}
+
+#footer-widgets .widget ul, #footer-widgets .widget ol {
+    list-style: none;
+    margin: 0;
+    padding:0 !important;
+}
+#footer-widgets .widget ul > li, #footer-widgets .widget ol > li {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+#footer-widgets .widget ul > li, #footer-widgets .widget ol > li {
+    padding: 0.5em 0;
+}
+footer.content-info .credit {
+    color: #333333 !important;
+}
+
+/*--------------------------------------------------------------
+10.2 Front Page
+--------------------------------------------------------------*/
+
+/* Portfolio */
+.project-summary {
+	background: rgba(229, 89, 92, 0.9);
+	text-align: center;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.project-image:hover .project-summary {
+	opacity: 1;
+}
+.project-summary {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	z-index: 0;
+}
+.project-title {
+	color: #fff;
+	font-size: 30px;
+	font-size: 3rem;
+	font-weight: 300;
+	position: relative;
+	top: 50%;
+	left: 0;
+	text-transform: none;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+
+}
+/* Social Links Menu */
+.front-page-block.social h2 {
+	display: inline;
+	float: left;
+	line-height: 1;
+	margin: 0;
+	width: auto;
+}
+.front-page-block.social .social-links {
+	display: inline;
+	float: right;
+}
